@@ -5,7 +5,7 @@
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex;
   gap: 40px;
 }
 
