@@ -85,6 +85,6 @@ galleryList.innerHTML = marcup;
 const lightbox = new SimpleLightbox('.gallery-link', {
   nav: true,
   captions: true,
-  captionsData: '',
+  captionsData: 'alt',
   captionDelay: 250,
 });
