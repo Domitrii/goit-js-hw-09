@@ -19,15 +19,16 @@ function checkLocalStorageForKeys(key) {
   }
 }
 
-function onInput(event) {
-  event.preventDefault();
-  (obj.email = input.value), (obj.message = textarea.value);
-  localStorage.setItem(KEY, JSON.stringify(obj));
-}
-
 function onSubmit(event) {
   event.preventDefault();
   console.log(obj);
   form.reset();
   localStorage.removeItem(KEY);
+}
+
+function onInput(event) {
+  event.preventDefault();
+  obj.email = input.value;
+  obj.message = textarea.value;
+  localStorage.setItem(KEY, JSON.stringify(obj));
 }
